@@ -4,8 +4,8 @@ import styles from './MainPage.module.scss';
 import { Button } from "@/shared/Button";
 import { CheckboxGroup } from "@/shared/CheckboxGroup";
 import Image from "next/image";
-import { getRandomCatImage } from "@/app/lib/getRandomCatImage";
 import {Loading} from "@/shared/Loading";
+import {fetchRandomCat} from "@/lib/catApi";
 
 interface CatImage {
     breeds: [],
@@ -28,7 +28,7 @@ const MainPage = () => {
         setError(null);
 
         try {
-            const url = await getRandomCatImage();
+            const url = await fetchRandomCat();
             setImageUrl(url);
         } catch (err) {
             setError('Failed to load cat image');
