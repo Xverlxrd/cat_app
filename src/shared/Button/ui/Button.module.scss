@@ -10,7 +10,7 @@
 .primary {
   background-color: $primary-btn;
   color: black;
-  border: 1px solid gray;
+  border: 1px solid $gray-color;
 
   &:hover {
     opacity: 0.8;
@@ -19,11 +19,11 @@
   &:active {
     opacity: 1;
     background-color: transparent;
-    color: green;
-    outline: 1px solid green;
+    color: $green-color;
+    outline: 1px solid $green-color;
   }
 }
 
 .btn_enabled {
-  background-color: gray;
+  background-color: $gray-color;
 }

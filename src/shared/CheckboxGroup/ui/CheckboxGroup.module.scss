@@ -1,3 +1,5 @@
+@use '@/app/styles/variables/variables' as *;
+
 .checkboxGroup {
   display: flex;
   flex-direction: column;
@@ -22,7 +24,7 @@
   width: 16px;
   height: 16px;
   cursor: pointer;
-  background-color: white;
+  background-color: $white-color;
 }
 
 .checkboxText {
