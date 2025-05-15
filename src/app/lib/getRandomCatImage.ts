@@ -1,4 +1,4 @@
-export default async function getRandomCatImage() {
+export async function getRandomCatImage() {
     try {
         const response = await fetch('/api/cat');
 

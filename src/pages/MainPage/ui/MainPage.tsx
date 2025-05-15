@@ -4,7 +4,7 @@ import styles from './MainPage.module.scss';
 import { Button } from "@/shared/Button";
 import { CheckboxGroup } from "@/shared/CheckboxGroup";
 import Image from "next/image";
-import { getRandomCatImage } from "@/pages/MainPage/model/lib/getRandomCatImage";
+import { getRandomCatImage } from "@/app/lib/getRandomCatImage";
 import {Loading} from "@/shared/Loading";
 
 interface CatImage {
