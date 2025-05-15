@@ -1,27 +1,24 @@
-import {NextResponse} from "next/server";
+
+export const dynamic = 'force-dynamic';
 
 export async function GET() {
-    const API_URL = new URL(`${process.env.BASE_CAT_URL}/v1/images/search`);
-
-    API_URL.searchParams.set('size', 'med');
-    API_URL.searchParams.set('limit', '1');
-    API_URL.searchParams.set('has_breeds', 'true');
+    const apiUrl = new URL(`${process.env.BASE_CAT_URL}/v1/images/search`);
+    apiUrl.searchParams.set('limit', '1');
+    apiUrl.searchParams.set('size', 'med');
 
     try {
-        const res = await fetch(API_URL, {
+        const res = await fetch(apiUrl, {
             headers: {
                 'x-api-key': process.env.CAT_API_KEY || ''
-            }
+            },
+            next: { revalidate: 60 }
         });
 
-        if (!res.ok) throw new Error(`Error API: ${res.status}`);
-
         const data = await res.json();
-        return NextResponse.json(data[0]);
-
+        return Response.json(data[0]);
     } catch (error) {
-        return NextResponse.json(
-            { error: 'Failed to load cat' },
+        return Response.json(
+            { error: 'Failed to fetch cat' },
             { status: 500 }
         );
     }
