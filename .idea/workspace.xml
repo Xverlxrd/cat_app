@@ -4,18 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="de06296c-849d-4105-b70c-889bf5b7c879" name="Changes" comment="Start develop">
-      <change afterPath="$PROJECT_DIR$/src/app/api/cat/route.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/shared/Loading/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/shared/Loading/ui/Loading.module.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/shared/Loading/ui/Loading.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/MainPage/model/lib/getRandomCatImage.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/MainPage/model/lib/getRandomCatImage.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/MainPage/ui/MainPage.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/MainPage/ui/MainPage.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/MainPage/ui/MainPage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/MainPage/ui/MainPage.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/shared/Button/ui/Button.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/Button/ui/Button.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/shared/CheckboxGroup/ui/CheckboxGroup.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/CheckboxGroup/ui/CheckboxGroup.tsx" afterDir="false" />
-    </list>
+    <list default="true" id="de06296c-849d-4105-b70c-889bf5b7c879" name="Changes" comment="fix gitignore" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -46,6 +35,9 @@
     &quot;accountId&quot;: &quot;d7a6650c-ca09-4993-9c5a-4e04e0435466&quot;
   }
 }</component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 7
 }</component>
@@ -115,7 +107,7 @@
       <option name="presentableId" value="Default" />
       <updated>1747277927506</updated>
       <workItem from="1747277929419" duration="8888000" />
-      <workItem from="1747296468788" duration="7163000" />
+      <workItem from="1747296468788" duration="7521000" />
     </task>
     <task id="LOCAL-00001" summary="Start develop">
       <option name="closed" value="true" />
@@ -125,7 +117,23 @@
       <option name="project" value="LOCAL" />
       <updated>1747309044489</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="End develop">
+      <option name="closed" value="true" />
+      <created>1747314025272</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1747314025272</updated>
+    </task>
+    <task id="LOCAL-00003" summary="fix gitignore">
+      <option name="closed" value="true" />
+      <created>1747314094033</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1747314094033</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -144,6 +152,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Start develop" />
-    <option name="LAST_COMMIT_MESSAGE" value="Start develop" />
+    <MESSAGE value="End develop" />
+    <MESSAGE value="fix gitignore" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix gitignore" />
   </component>
 </project>
