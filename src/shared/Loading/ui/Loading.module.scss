@@ -1,0 +1,45 @@
+.loader {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  row-gap: 20px;
+}
+
+.circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  border: 2px dashed blue;
+  border-radius: 50%;
+  animation: rotate-right 2s linear infinite;
+}
+
+.circle_into {
+  width: 30px;
+  height: 30px;
+  border: 2px dashed red;
+  border-radius: 50%;
+  animation: rotate-left 1s linear infinite;
+}
+
+@keyframes rotate-right {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes rotate-left {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(-360deg);
+  }
+}
