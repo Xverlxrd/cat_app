@@ -1,0 +1,25 @@
+@use '@/app/styles/variables/variables' as *;
+
+.Button {
+  padding: 13px 10px;
+  white-space: nowrap;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.primary {
+  background-color: $primary-btn;
+  color: black;
+  border: 1px solid gray;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 1;
+    background-color: transparent;
+    color: green;
+    outline: 1px solid green;
+  }
+}
